@@ -6,6 +6,7 @@ License:	GPL
 Group:		System/Libraries
 Source0:	%{name}-%{version}.tar.bz2
 Requires:	glibc >= 2.1.0
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This package provide Japanese Code Conversion capability based on iconv.
