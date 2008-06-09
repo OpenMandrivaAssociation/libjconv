@@ -25,9 +25,13 @@ install -m755 jconv -D $RPM_BUILD_ROOT%{_bindir}/jconv
 install -m644 jconv.h -D $RPM_BUILD_ROOT%{_includedir}/jconv.h
 install -m644 default.conf -D $RPM_BUILD_ROOT%{_sysconfdir}/libjconv/default.conf
 
+%if %mdkversion < 200900
 %post -p /sbin/ldconfig
+%endif
 
+%if %mdkversion < 200900
 %postun -p /sbin/ldconfig
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
