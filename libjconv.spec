@@ -1,7 +1,7 @@
 Summary:	Japanese Code Conversion Library
 Name:		libjconv
 Version:	2.8.1
-Release:	%mkrel 8
+Release:	9
 License:	GPL
 Group:		System/Libraries
 Source0:	%{name}-%{version}.tar.bz2
