@@ -8,6 +8,7 @@ Source0:	%{name}-%{version}.tar.bz2
 Requires:	glibc >= 2.1.0
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
+BuildRequires:	make
 %description
 This package provide Japanese Code Conversion capability based on iconv.
 
